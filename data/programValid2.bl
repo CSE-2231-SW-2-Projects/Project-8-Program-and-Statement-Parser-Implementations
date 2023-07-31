@@ -1,0 +1,15 @@
+PROGRAM TestValid2 IS
+ 
+BEGIN
+  IF next-is-not-enemy THEN
+    move
+  END IF
+  IF true THEN
+    WHILE random DO
+        skip
+    END WHILE
+  ELSE 
+    move 
+    infect
+  END IF
+END TestValid2 

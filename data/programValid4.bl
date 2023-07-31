@@ -1,0 +1,51 @@
+PROGRAM TestValid4 IS
+
+  INSTRUCTION SkiP-skPPp-sKip-42 IS
+    skip
+    skip
+    skip
+  END SkiP-skPPp-sKip-42
+  
+  INSTRUCTION Infect-infect-INFECTThemALL233 IS
+    WHILE true DO
+        IF next-is-enemy THEN
+            infect
+            infect
+        ELSE
+            infect
+            infect
+        END IF
+    skip
+    skip
+    move
+    turnright
+    END WHILE
+  END Infect-infect-INFECTThemALL233
+  
+  INSTRUCTION flee IS 
+    move
+    move
+  END flee
+  
+  INSTRUCTION FINAL-BACKUP-PLAN-ONLY-if-NECESSARY999999----- IS
+    WHILE random DO
+        flee
+    END WHILE
+    flee
+    flee
+    SkiP-skPPp-sKip-42
+    Infect-infect-INFECTThemALL233
+  END FINAL-BACKUP-PLAN-ONLY-if-NECESSARY999999-----        
+ 
+BEGIN
+  WHILE true DO
+    flee   
+    SkiP-skPPp-sKip-42
+    IF next-is-enemy THEN
+      Infect-infect-INFECTThemALL233
+    ELSE 
+      FINAL-BACKUP-PLAN-ONLY-if-NECESSARY999999-----
+    END IF
+  END WHILE
+       
+END TestValid4 

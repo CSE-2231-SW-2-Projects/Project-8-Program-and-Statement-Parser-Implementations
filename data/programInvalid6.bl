@@ -1,0 +1,26 @@
+PROGRAM TestInvalid6 IS
+
+  INSTRUCTION move IS
+     move
+  END move  
+  
+  INSTRUCTION skip IS
+    WHILE next-is-empty DO
+        move
+    END WHILE
+  END skip
+  
+BEGIN
+  IF next-is-not-enemy THEN
+    move
+  END IF
+  one
+  one 
+  one
+  IF true THEN
+    findOb-findenemy23
+  ELSE 
+    move 
+    infect
+  END IF
+END TestInvalid6 

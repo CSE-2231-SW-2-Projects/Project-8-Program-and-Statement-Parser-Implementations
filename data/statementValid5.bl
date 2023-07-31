@@ -1,0 +1,62 @@
+WHILE random DO
+    move
+    skip
+    flee
+    WHILE true DO
+        move
+        WHILE next-is-enemy DO
+            IF next-is-not-wall THEN
+                IF next-is-not-enemy THEN
+                    move 
+                    IF next-is-friend THEN
+                        turnleft
+                        WHILE true DO
+                            move
+                            WHILE next-is-enemy DO           
+                                infect
+                            END WHILE
+                        END WHILE
+                    END IF
+                    IF next-is-empty THEN
+                        move
+                    END IF
+                END IF            
+                IF true THEN
+                    run
+                ELSE
+                    turnleft
+                        IF next-is-friend THEN
+                            turnleft
+                        ELSE 
+                            WHILE next-is-empty DO
+                                move
+                            END WHILE
+                            turnright
+                        END IF
+                END IF
+                skip
+                flee
+            END IF
+            infect
+        END WHILE
+    END WHILE           
+END WHILE
+IF next-is-not-wall THEN
+END IF
+IF next-is-wall THEN 
+END IF
+IF random THEN
+ELSE
+END IF
+IF next-is-wall THEN
+    WHILE true DO
+        IF next-is-enemy THEN
+            move
+        END IF
+    END WHILE
+ELSE
+    findObstacle
+END IF      
+                
+                
+

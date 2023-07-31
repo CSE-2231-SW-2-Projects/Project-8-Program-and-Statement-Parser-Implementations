@@ -1,0 +1,53 @@
+WHILE random DO
+    move
+    skip
+    flee
+    WHILE true DO
+        move
+        WHILE next-is-enemy DO
+            WHILE next-is-empty DO
+                move
+            END WHILE
+            infect
+        END WHILE
+    END WHILE           
+
+WHILE true DO
+    move
+    WHILE next-is-empty DO
+        move
+        WHILE next-is-enemy DO
+            infect
+        END WHILE
+        WHILE next-is-friend DO
+            skip
+        END WHILE
+        WHILE next-is-wall DO
+            turnleft
+        END WHILE
+    END WHILE
+    infect
+    move
+    turnleft
+END WHILE
+WHILE next-is-wall DO
+            turnleft
+END WHILE
+WHILE true DO
+        move
+        WHILE next-is-enemy DO
+            WHILE next-is-empty DO
+                move
+            END WHILE
+            infect
+        END WHILE
+END WHILE 
+WHILE next-is-enemy DO
+    infect
+END WHILE
+WHILE next-is-friend DO
+    skip
+END WHILE
+WHILE next-is-wall DO
+    turnleft
+END WHILE

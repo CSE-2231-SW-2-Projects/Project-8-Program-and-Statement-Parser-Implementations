@@ -1,0 +1,29 @@
+IF next-is-not-wall THEN
+    IF next-is-not-enemy THEN
+        move 
+        IF next-is-friend THEN
+            turnleft
+        END IF
+        IF next-is-empty THEN
+            move
+        END IF
+    END IF            
+    move
+    skip
+    flee
+END IF
+IF next-is-wall THEN
+    walk
+END IF
+IF next-is-wall THEN
+    IF next-is-wall THEN
+        move
+            IF random THEN
+                skip
+                    IF true THEN
+                        skip
+                    END IF
+            END IF
+    END IF
+    walk
+END IF

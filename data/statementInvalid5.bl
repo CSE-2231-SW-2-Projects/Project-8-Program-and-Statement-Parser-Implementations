@@ -1,0 +1,74 @@
+IF next-is-not-wall THEN
+    move
+    skip
+    flee
+    IF random THEN
+        move
+        IF true THEN
+            run
+        ELSE
+            turnleft
+            IF next-is-friend THEN
+               turnleft
+            ELSE 
+               turnright
+            END IF
+        END IF
+    ELSE
+        skip
+    END IF
+ELSE
+    move
+    run
+    turnleft
+    turnright
+    infect
+    skip
+ IF
+IF true THEN
+    move 
+    IF next-is-enemy THEN
+        skip
+        IF next-is-empty THEN
+            infect
+            skip
+        ELSE
+            infect 
+            skip
+        END IF
+    ELSE
+        IF next-is-not-friend THEN
+            infect
+            run
+            move
+        ELSE 
+        END IF
+    END IF
+ELSE
+    IF random THEN
+        IF next-is-not-empty THEN
+            skip
+            turnleft
+            turnright
+        ELSE
+            turnright
+        END IF
+    ELSE
+        move
+    END IF
+END IF
+IF random THEN
+        move
+        IF true THEN
+            run
+        ELSE
+            turnleft
+            IF next-is-friend THEN
+               turnleft
+            ELSE 
+               turnright
+            END IF
+        END IF
+ELSE
+    skip
+END IF

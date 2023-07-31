@@ -1,0 +1,13 @@
+PROGRAM TestValid3 IS
+
+  INSTRUCTION SkiP-skPPp-sKip-42 IS
+    skip
+    skip
+    skip
+  END SkiP-skPPp-sKip-42
+ 
+BEGIN
+  move
+  skip
+  SkiP-skPPp-sKip-42
+END TestValid3 
